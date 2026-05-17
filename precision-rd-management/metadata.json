@@ -1,0 +1,8 @@
+{
+  "name": "Precision R&D Management",
+  "description": "A high-precision hardware development management system featuring Stage-Gate tracking, Gantt charts, and resource load heatmaps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

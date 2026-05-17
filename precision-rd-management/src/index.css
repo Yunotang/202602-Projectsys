@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Professional Pink Palette */
+  --color-primary: #780037;
+  --color-primary-container: #9d174d;
+  --color-secondary: #a43073;
+  --color-secondary-container: #fc79bd;
+  --color-tertiary: #2d3b4e;
+  --color-background: #f7f9fb;
+  --color-surface-bright: #f7f9fb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container: #eceef0;
+  --color-surface-container-high: #e6e8ea;
+  --color-surface-container-highest: #e0e3e5;
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #574146;
+  --color-outline: #8b7076;
+  --color-outline-variant: #debfc4;
+  
+  --color-deep-burgundy: #831843;
+  --color-soft-blush: #FCE7F3;
+  --color-critical-orange: #F97316;
+  --color-resource-conflict: #E11D48;
+  
+  --color-stage-evt: #DB2777;
+  --color-stage-dvt: #BE185D;
+  --color-stage-pvt: #9D174D;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans antialiased;
+  }
+}
+
+/* Custom Heatmap Patterns */
+.heatmap-overload {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 5px,
+    rgba(255, 255, 255, 0.1) 5px,
+    rgba(255, 255, 255, 0.1) 10px
+  );
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 12px rgba(157, 23, 77, 0.05);
+}
+
+.shadow-alert {
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.12);
+}
